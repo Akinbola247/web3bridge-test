@@ -1,0 +1,27 @@
+.type_form{ 
+    width: 30%;
+    position: absolute;
+    left: 40%;
+    top: 25%;
+}
+
+.successfull{
+    display: none;
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    top: 45%;
+}
+
+#invalid-feedback1,
+#invalid-feedback2,
+#invalid-feedback3,
+#invalid-feedback4
+{
+  display: none;
+  color: red;
+}
+
+.buttonsub{
+    margin-top: 20px;
+}
