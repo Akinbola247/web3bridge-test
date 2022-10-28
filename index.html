@@ -18,8 +18,8 @@
         
                 <div class="col-md-12">
                     <label for="fname" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="user_name" name="fname" inputmode="text" placeholder="e.g. Jane243" required="" maxlength="20" autocomplete="off">
-                    <small class="text-muted">Pick a usernname</small>
+                    <input type="text" class="form-control" id="user_name" name="fname" pattern="/^[a-z\d]+$/i" inputmode="text" placeholder="e.g. Jane243" required="" maxlength="20" autocomplete="off">
+                    <small class="text-muted">Pick a username</small>
                     <div id="invalid-feedback1">
                       Username is required
                     </div>
@@ -27,7 +27,7 @@
 
                   <div class="col-md-12">
                     <label for="fname" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email_name" name="fname" inputmode="text" placeholder="e.g. abc@email.com" required="" maxlength="20" autocomplete="off">
+                    <input type="email" class="form-control" name="email" id="email_name" name="fname" inputmode="email" pattern="[A-Za-z ]*" placeholder="e.g. abc@email.com" required="" maxlength="20" autocomplete="off">
                     <small class="text-muted">Type a valid email</small>
                     <div id="invalid-feedback2">
                       email is required

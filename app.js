@@ -19,15 +19,16 @@ submission.addEventListener("click", function(){
     let inputPassword = password.value
     let inputEmail = email.value
     let inputConfirmPassword = confirmPassword.value
-if (inputUsername && inputEmail && inputConfirmPassword === inputPassword){
+if (inputUsername && inputEmail && inputConfirmPassword === inputPassword && inputPassword.length >= 8 ){
     success.style.display = "block"
     typeForm.style.display = "none"
-    
-}else if (inputPassword != inputConfirmPassword){
+}else if (inputPassword.length < 8){
+    invalid3.style.display = "block"
+    invalid3.innerText = "password should be more than 8 characters"
+} else if (inputPassword != inputConfirmPassword){
     invalid4.style.display = "block"
     invalid4.innerText = "Password don't match"
-}
-else {
+}else {
     invalid1.style.display = "block"
     invalid2.style.display = "block"
     invalid3.style.display = "block"
@@ -50,3 +51,5 @@ password.addEventListener ("click", function(){
 confirmPassword.addEventListener ("click", function(){
     invalid4.style.display = "none"
 })
+
+
